@@ -22,7 +22,8 @@ function MonIcon({ mon }: Readonly<{ mon: string }>) {
   }
 
   monName = monName
-    .replace(" ", "-")
+    .replace(" ", "")
+    .replace("-", "")
     .replace(/[^a-z0-9-]/g, "")
     .replace("hisui", "hisuian")
     .replace("galar", "galarian")
