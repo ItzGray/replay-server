@@ -28,6 +28,9 @@ function MonIcon({ mon }: Readonly<{ mon: string }>) {
     .replace("galar", "galarian")
     .replace("alola", "alolan")
     .replace("paldea", "paldean");
+  if (mon === "Basculin-Blue-Striped") {
+    monName = "basculin";
+  }
   const src = `https://raw.githubusercontent.com/ItzGray/snakewood-showdown-sprites/main/sprites/gen3/${monName}.png`;
   if (err) {
     return (
