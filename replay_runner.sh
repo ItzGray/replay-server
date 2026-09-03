@@ -1,4 +1,3 @@
-#!/bin/bash
 trap "echo Exited!; exit;" SIGINT SIGTERM
 while [[ 1=1 ]]
 do
